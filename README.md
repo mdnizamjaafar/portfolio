@@ -2,13 +2,13 @@
 
 | Skill | Level |
 |  :--- |  :--- |
-| `Excel` | Advanced |
-| `Excel VBA` | Intermediate |
-| `SQL` | Intermediate |
-| `Power BI` | Intermediate |
-| `Python` | Beginner |
-| `Power App` | Beginner |
-| `Power Automate` | Beginner |
+| Excel | Advanced |
+| Excel VBA | Intermediate |
+| SQL | Intermediate |
+| Power BI | Intermediate |
+| Python | Beginner |
+| Power App | Beginner |
+| Power Automate | Beginner |
 
 ## Education
 - Sijil Pelajaran Malaysia (SPM) \| SMK Wangsa Melawati (_2009_)								       		
