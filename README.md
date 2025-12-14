@@ -1,6 +1,14 @@
-# Business Analyst | Data Analyst | Citizen Developer
+# Citizen Analyst & Developer
 
-#### Technical Skills: Excel, VBA Excel, SQL, Power BI, Power Apps, Power Automate
+| Skill | Level |
+|  :---: |  :---: |
+| Excel | Advanced |
+| Excel VBA | Intermediate |
+| SQL | Intermediate |
+| Power BI | Intermediate |
+| Python | Beginner |
+| Power App | Beginner |
+| Power Automate | Beginner |
 
 ## Education
 - Sijil Pelajaran Malaysia (SPM) | SMK Wangsa Melawati (_2009_)								       		
