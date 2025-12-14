@@ -1,7 +1,7 @@
 # Citizen Analyst & Developer
 
 | Skill | Level |
-|  :---: |  :---: |
+|  :--- |  :--- |
 | `Excel` | Advanced |
 | `Excel VBA` | Intermediate |
 | `SQL` | Intermediate |
@@ -11,8 +11,7 @@
 | `Power Automate` | Beginner |
 
 ## Education
-- Sijil Pelajaran Malaysia (SPM)
-> SMK Wangsa Melawati (_2009_)								       		
+- Sijil Pelajaran Malaysia (SPM) \| SMK Wangsa Melawati (_2009_)								       		
 
 ## Work Experience
 **Senior Executive, Business Planning & Co-ordination (_June 2016 - Present_)**
