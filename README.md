@@ -14,7 +14,7 @@
 - Sijil Pelajaran Malaysia (SPM) \| SMK Wangsa Melawati (_2009_)								       		
 
 ## Work Experience
-**Senior Executive, Business Planning & Co-ordination (_June 2016 - Present_)**
+**Specialist, Business Planning & Co-ordination (_June 2016 - Present_)**
 - Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
 - Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
 
