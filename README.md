@@ -1,39 +1,85 @@
 # Citizen Analyst & Developer
 
+I am a business planning professional and self-taught analyst interested in turning data into clear insights and useful tools. My portfolio features projects in Excel data analysis and Python.
+
+## Skills
+
 | Skill | Level |
-|  :--- |  :--- |
+| :--- | :--- |
 | Excel | Advanced |
 | Excel VBA | Intermediate |
 | SQL | Intermediate |
 | Power BI | Intermediate |
 | Python | Beginner |
-| Power App | Beginner |
+| Power Apps | Beginner |
 | Power Automate | Beginner |
 
+## Featured Projects
+
+<div class="project-grid">
+  <article class="project-card">
+    <p class="project-type">Python · Beginner Project</p>
+    <h3>High &amp; Low Number Guessing Game</h3>
+    <p>A command-line number guessing game featuring a randomly selected target, higher-or-lower hints, a maximum number of attempts, replay, and game statistics.</p>
+    <ul class="project-tags">
+      <li>Python</li>
+      <li>Input handling</li>
+      <li>Command line</li>
+    </ul>
+    <div class="project-actions">
+      <a class="project-link project-link-primary" href="https://github.com/mdnizamjaafar/Python-Mini-Project/blob/main/High%20%26%20Low.py">View source</a>
+      <a class="project-link" href="https://github.com/mdnizamjaafar/Python-Mini-Project">Repository</a>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <p class="project-type">Excel · Data Analysis</p>
+    <h3>Gym Member Exercise Analysis</h3>
+    <p>An analysis project built around gym member exercise data, with an Excel tracking workbook, source dataset, written findings, and presentation.</p>
+    <ul class="project-tags">
+      <li>Excel</li>
+      <li>Data analysis</li>
+      <li>Reporting</li>
+    </ul>
+    <div class="project-actions">
+      <a class="project-link project-link-primary" href="https://github.com/mdnizamjaafar/excel-project/tree/main/Gym%20Member%20Exercise">View project</a>
+      <a class="project-link" href="https://github.com/mdnizamjaafar/excel-project/blob/main/Gym%20Member%20Exercise/Analysis%20-%20Gym%20Member%20Exercise.pdf">View report</a>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <p class="project-type">Excel · Data Analysis</p>
+    <h3>Top 98 Healthiest Food</h3>
+    <p>An exploration of a public dataset about healthy foods, with an Excel workbook, source data, and a summary of the analysis.</p>
+    <ul class="project-tags">
+      <li>Excel</li>
+      <li>Data exploration</li>
+      <li>Kaggle dataset</li>
+    </ul>
+    <div class="project-actions">
+      <a class="project-link project-link-primary" href="https://github.com/mdnizamjaafar/excel-project/tree/main/Top%2098%20Healthiest%20Food">View project</a>
+      <a class="project-link" href="https://github.com/mdnizamjaafar/excel-project/blob/main/Top%2098%20Healthiest%20Food/Analysis%20Conclusion%20-%20Top%2098%20Healthiest%20Food.pdf">View report</a>
+    </div>
+  </article>
+</div>
+
+## Experience
+
+**Specialist, Business Planning & Co-ordination** (_June 2016 – Present_)
+
+- Identified and corrected a missing step in a production data pipeline affecting more than 70% of active accounts.
+- Redeveloped a loan originations model, improving model performance by 50% and helping avoid $1 million in potential losses.
+
+**Admin Assistant** (_2016_)
+
+- Supported data collection, processing, and analysis for a study examining more than 300 biometric variables and human performance.
+- Applied unsupervised deep-learning approaches to longitudinal ICU data to investigate sepsis sub-phenotypes.
+
 ## Education
-- Sijil Pelajaran Malaysia (SPM) \| SMK Wangsa Melawati (_2009_)								       		
 
-## Work Experience
-**Specialist, Business Planning & Co-ordination (_June 2016 - Present_)**
-- Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
-- Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
+**Sijil Pelajaran Malaysia (SPM)** — SMK Wangsa Melawati (_2009_)
 
-**Admin Assistant (_2016_)**
-- Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
-- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
+## Connect
 
-## Projects
-### Excel Project - Data Analysis - Gym Member Exercise
-[Publication](https://github.com/mdnizamjaafar/excel-project/tree/main/Gym%20Member%20Exercise)
-
-Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
-
-![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)
-
-### Excel Project - Data Analysis - Top 98 Healthiest Food
-[Publication](https://github.com/mdnizamjaafar/excel-project/tree/main/Top%2098%20Healthiest%20Food)
-
-Used **Matlab** to train over 100 machine learning models which estimated particulate matter concentrations based on a suite of over 300 biometric variables. We found biometric variables can be used to accurately estimate particulate matter concentrations at ultra-fine spatial scales with high fidelity (r2 = 0.91) and that smaller particles are better estimated than larger ones. Inferring environmental conditions solely from biometric measurements allows us to disentangle key interactions between the environment and the body.
-
-![Bike Study](/assets/img/bike_study.jpeg)
-
+- [GitHub](https://github.com/mdnizamjaafar)
+- [LinkedIn](https://www.linkedin.com/in/mdnizamjaafar/)
