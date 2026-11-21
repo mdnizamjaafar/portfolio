@@ -65,15 +65,29 @@ I am a business planning professional and self-taught analyst interested in turn
 
 ## Experience
 
-**Specialist, Business Planning & Co-ordination** (_June 2016 – Present_)
+### Specialist, Business Planning
+**Golden Screen Cinemas Sdn Bhd** · Full-time  
+*January 2026 – Present · 11 months*
 
-- Identified and corrected a missing step in a production data pipeline affecting more than 70% of active accounts.
-- Redeveloped a loan originations model, improving model performance by 50% and helping avoid $1 million in potential losses.
+- Developed and published Power BI reports for company performance, handling data through end-to-end ETL processes.
+- Designed data models and created DAX measures and interactive visualisations.
+- Developed report automation using Excel with integration of data sources from Fabric data warehouse and SharePoint.
+- Eliminated manual intervention for monthly and reporting cycles for the Product Sales Mix on both company and cinema level, reducing report preparation time by 85%.
+- Developed low-code app solutions using Power Platform for Emergency Call Activation Requests and Procurement Exception Form requests.
+- Streamlined workflows, enhanced audit trail compliance, and improved operational efficiency through automated approval workflows, email reminders, and SharePoint integration.
 
-**Admin Assistant** (_2016_)
+### Senior Executive, Business Planning & Technical
+**Golden Screen Cinemas Sdn Bhd** · Full-time  
+*January 2024 – December 2025 · 2 years*
 
-- Supported data collection, processing, and analysis for a study examining more than 300 biometric variables and human performance.
-- Applied unsupervised deep-learning approaches to longitudinal ICU data to investigate sepsis sub-phenotypes.
+- Designed and enhanced over 10 comprehensive guidelines and FAQs for NOC's mode, the Asset Breakdown System (ABS), and Light Source Report (LSR).
+- Created guidelines for the Centralized Stock Card (CSC), improving user understanding and operational efficiency.
+- Improved data collection for Disruption and Cancellation (D&C) by more than 45%, significantly optimising reporting accuracy and operational processes.
+- Delivered training to over 100 users for NOC's ABS module, including Technical Area, Cinema teams, and Projector & Sound (P&S) personnel.
+- Developed automated brightness and sound comparison reports using VBA Excel, reducing report generation time by 90% and manual processing.
+- Created a VBA Excel application for the Centralized Stock Card (CSC) to track asset movements between improving operations and HQ, streamlining asset monitoring and improving accuracy.
+- Developed a xenon forecasting model with approximately 80% accuracy using data from Xenon Report and custom formulas and managed a centralized ordering from the data gathered.
+- Created a purchase summary tool using VBA Excel, tracking and analysing purchases with over 80% accuracy.
 
 ## Education
 
