@@ -19,6 +19,8 @@ I am a business planning professional and self-taught analyst interested in turn
 
 ## Featured Projects
 
+<p class="all-projects-link"><a href="{{ '/projects/' | relative_url }}">Browse detailed project stories <span aria-hidden="true">↗</span></a></p>
+
 <div class="project-grid">
   <article class="project-card">
     <p class="project-type">Python · Beginner Project</p>
