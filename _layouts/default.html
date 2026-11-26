@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f7f8f5">
+    <meta name="theme-color" content="#f4f6f8">
     <meta name="description" content="Mohd Nizamuddin Bin Jaafar — Citizen Analyst and Developer in data analytics, Power BI and Microsoft Power Platform.">
     <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/portfolio-fixes.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% if page.project_page %}<link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}">{% endif %}
+    {% if page.project_page %}<link rel="stylesheet" href="{{ '/assets/css/projects.css?v=' | append: site.github.build_revision | relative_url }}">{% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/portfolio-polish.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
     <header class="site-header">
@@ -70,7 +71,7 @@
         root.dataset.theme = theme;
         localStorage.setItem('portfolio-theme', theme);
         toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-        document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#171916' : '#f7f8f5';
+        document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#171c22' : '#f4f6f8';
       }
 
       setTheme(savedTheme || (systemDark ? 'dark' : 'light'));

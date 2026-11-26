@@ -1,0 +1,128 @@
+/* Calm, professional portfolio theme — system fonts, restrained color, compact profile. */
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-2: #edf1f4;
+  --text: #202b36;
+  --muted: #5d6874;
+  --line: #d7dee5;
+  --accent: #315d74;
+  --accent-soft: #e5edf1;
+  --header: rgba(244, 246, 248, .96);
+  --shadow: 0 8px 24px rgba(32, 43, 54, .07);
+}
+:root[data-theme="dark"] {
+  --bg: #171c22;
+  --surface: #202730;
+  --surface-2: #252e37;
+  --text: #edf1f4;
+  --muted: #b2bdc7;
+  --line: #3a4651;
+  --accent: #91b6ca;
+  --accent-soft: #293943;
+  --header: rgba(23, 28, 34, .96);
+  --shadow: 0 8px 24px rgba(0, 0, 0, .18);
+}
+
+html { scroll-padding-top: 92px; }
+body {
+  font-family: "Aptos", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  line-height: 1.62;
+  letter-spacing: 0;
+}
+.site-header { backdrop-filter: blur(8px); }
+.header-inner, main, .site-footer { width: min(100% - 48px, 1000px); }
+.brand { font-weight: 650; letter-spacing: 0; }
+.brand-mark { border-radius: 6px; font-family: inherit; font-weight: 700; }
+.nav { gap: clamp(14px, 2.2vw, 25px); }
+.nav a { font-weight: 600; }
+.nav a::after { height: 1px; }
+.theme-toggle { border-radius: 6px; }
+
+/* Compact, consistently aligned portrait: supportive, not the main event. */
+.home-profile {
+  max-width: 900px;
+  min-height: 0;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 42px);
+  margin: 0 auto;
+  padding: 38px 0 42px;
+}
+.home-profile img {
+  width: 128px;
+  height: 156px;
+  aspect-ratio: auto;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  object-position: center 36%;
+  box-shadow: none;
+}
+.home-profile-copy .eyebrow { margin-bottom: 8px; }
+.home-profile-copy h2 {
+  font-family: inherit;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 650;
+  letter-spacing: -.045em;
+  line-height: 1.08;
+}
+.home-profile-copy h2 em { color: inherit; font-style: normal; font-weight: 500; }
+.home-profile-copy > p:last-child { max-width: 510px; margin-top: 12px; font-size: 1rem; }
+
+/* Consistent typography and restrained surfaces throughout both pages. */
+h1, h2, h3, h4,
+.hero h1, .section-heading h2, .about h2, .site-footer h2,
+.project-hero h1, .project-section-heading h2, .project-note h2,
+.case-content h3, .project-card h3 {
+  font-family: "Aptos", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+  letter-spacing: -.035em;
+}
+.hero h1, .project-hero h1 { font-weight: 650; line-height: 1.02; }
+.hero h1 em, .project-hero h1 em { font-style: normal; font-weight: 500; }
+.section-heading h2, .about h2, .site-footer h2,
+.project-section-heading h2, .project-note h2, .case-content h3 { font-weight: 630; }
+.project-hero::after { color: var(--surface-2); }
+.project-card, .case-visual, .project-note { border-radius: 7px; box-shadow: none; }
+.project-card { border-color: var(--line); }
+.project-card:hover { box-shadow: 0 8px 20px rgba(32, 43, 54, .07); }
+.button { border-radius: 6px; font-weight: 650; }
+.button.primary { border-color: var(--accent); background: var(--accent); color: #fff; }
+.project-tags li, .skill-level { background: var(--accent-soft); color: var(--accent); }
+.case-visual { background-color: var(--surface-2); }
+.visual-gym, .visual-food { background-image: none; }
+.chart-bar { background: #6c8797; opacity: .68; }
+.food-orbit { border-color: color-mix(in srgb, var(--accent) 32%, transparent); }
+.food-core { color: var(--accent); box-shadow: none; }
+.terminal-bar i { background: #a1aeb7; }
+.terminal-body b, .terminal-body strong, .terminal-body .terminal-hint,
+.terminal-body .terminal-cursor { color: #c4d2da; }
+.terminal-body .terminal-hint { opacity: .86; }
+.project-note { background: var(--surface-2); }
+.skills-table th, .skills-table td { border-radius: 5px; }
+.footer-links a { border-radius: 5px; }
+
+@media (max-width: 820px) {
+  .header-inner, main, .site-footer { width: min(100% - 36px, 1000px); }
+}
+@media (max-width: 600px) {
+  .header-inner { width: calc(100% - 28px); }
+  .brand span:last-child { display: inline; font-size: .82rem; }
+  .nav { gap: 18px; }
+  .home-profile {
+    grid-template-columns: 84px minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+    padding: 28px 0 30px;
+  }
+  .home-profile img { width: 84px; height: 104px; border-radius: 6px; }
+  .home-profile-copy h2 { font-size: clamp(1.45rem, 7vw, 2rem); line-height: 1.12; }
+  .home-profile-copy > p:last-child { margin-top: 8px; font-size: .86rem; line-height: 1.5; }
+  .home-profile-copy .eyebrow { margin-bottom: 6px; font-size: .62rem; letter-spacing: .1em; }
+  .skills-table { border-spacing: 5px; }
+  .skills-table th, .skills-table td { padding: 10px 8px; }
+  .skills-table tbody th { font-size: .8rem; }
+  .project-card { min-height: 0; }
+  .case-visual { min-height: 230px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
