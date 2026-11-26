@@ -8,6 +8,7 @@
     <meta name="description" content="Mohd Nizamuddin Bin Jaafar — Citizen Analyst and Developer in data analytics, Power BI and Microsoft Power Platform.">
     <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% if page.project_page %}<link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}">{% endif %}
   </head>
   <body>
     <header class="site-header">
@@ -17,10 +18,11 @@
           <span>Mohd Nizamuddin</span>
         </a>
         <nav class="nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
+          <a href="{{ '/' | absolute_url }}#about">About</a>
+          <a href="{{ '/' | absolute_url }}#work">Work</a>
+          <a href="{{ '/projects/' | relative_url }}"{% if page.project_page %} class="active" aria-current="page"{% endif %}>Projects</a>
+          <a href="{{ '/' | absolute_url }}#experience">Experience</a>
+          <a href="{{ '/' | absolute_url }}#contact">Contact</a>
         </nav>
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Change theme">
           <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.4-.3-.7-.7-.8-.4-.1-.8.1-.9.5A7 7 0 0 1 8 18.4 7 7 0 0 1 11.4 5c.4-.1.6-.5.5-.9A.8.8 0 0 0 12 3Z"/></svg>
@@ -69,7 +71,9 @@
         const observer = new IntersectionObserver(entries => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              navLinks.forEach(link => link.classList.toggle('active', link.hash === '#' + entry.target.id));
+              navLinks.forEach(link => {
+                if (link.hash) link.classList.toggle('active', link.hash === '#' + entry.target.id);
+              });
             }
           });
         }, { rootMargin: '-30% 0px -60%', threshold: 0 });
