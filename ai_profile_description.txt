@@ -1,0 +1,1 @@
+I am a business planning professional and citizen analyst who turns data into clear insights and practical solutions. I build Power BI dashboard reports and structured semantic models in Microsoft Fabric, using PySpark, Dataflow Gen2, and SharePoint to prepare and integrate data. I also automate workflows with Power Automate and develop low-code solution apps with Power Apps.
