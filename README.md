@@ -4,15 +4,18 @@ I am a business planning professional and self-taught analyst interested in turn
 
 ## Skills
 
-| Skill | Level |
-| :--- | :--- |
-| Excel | Advanced |
-| Excel VBA | Intermediate |
-| SQL | Intermediate |
-| Power BI | Intermediate |
-| Python | Beginner |
-| Power Apps | Beginner |
-| Power Automate | Beginner |
+<table class="skills-table">
+  <thead><tr><th scope="col">Skill</th><th scope="col">Level</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Excel</th><td><span class="skill-level skill-advanced">Advanced</span></td></tr>
+    <tr><th scope="row">Excel VBA</th><td><span class="skill-level skill-intermediate">Intermediate</span></td></tr>
+    <tr><th scope="row">SQL</th><td><span class="skill-level skill-intermediate">Intermediate</span></td></tr>
+    <tr><th scope="row">Power BI</th><td><span class="skill-level skill-intermediate">Intermediate</span></td></tr>
+    <tr><th scope="row">Python</th><td><span class="skill-level skill-beginner">Beginner</span></td></tr>
+    <tr><th scope="row">Power Apps</th><td><span class="skill-level skill-beginner">Beginner</span></td></tr>
+    <tr><th scope="row">Power Automate</th><td><span class="skill-level skill-beginner">Beginner</span></td></tr>
+  </tbody>
+</table>
 
 ## Featured Projects
 
@@ -29,6 +32,7 @@ I am a business planning professional and self-taught analyst interested in turn
     <div class="project-actions">
       <a class="project-link project-link-primary" href="https://github.com/mdnizamjaafar/Python-Mini-Project/blob/main/High%20%26%20Low.py">View source</a>
       <a class="project-link" href="https://github.com/mdnizamjaafar/Python-Mini-Project">Repository</a>
+      <a class="project-link" href="{{ '/projects/#number-game' | relative_url }}">Project details</a>
     </div>
   </article>
 
@@ -44,6 +48,7 @@ I am a business planning professional and self-taught analyst interested in turn
     <div class="project-actions">
       <a class="project-link project-link-primary" href="https://github.com/mdnizamjaafar/excel-project/tree/main/Gym%20Member%20Exercise">View project</a>
       <a class="project-link" href="https://github.com/mdnizamjaafar/excel-project/blob/main/Gym%20Member%20Exercise/Analysis%20-%20Gym%20Member%20Exercise.pdf">View report</a>
+      <a class="project-link" href="{{ '/projects/#gym-analysis' | relative_url }}">Project details</a>
     </div>
   </article>
 
@@ -59,9 +64,12 @@ I am a business planning professional and self-taught analyst interested in turn
     <div class="project-actions">
       <a class="project-link project-link-primary" href="https://github.com/mdnizamjaafar/excel-project/tree/main/Top%2098%20Healthiest%20Food">View project</a>
       <a class="project-link" href="https://github.com/mdnizamjaafar/excel-project/blob/main/Top%2098%20Healthiest%20Food/Analysis%20Conclusion%20-%20Top%2098%20Healthiest%20Food.pdf">View report</a>
+      <a class="project-link" href="{{ '/projects/#healthy-food' | relative_url }}">Project details</a>
     </div>
   </article>
 </div>
+
+<p class="all-projects-link"><a href="{{ '/projects/' | relative_url }}">Explore all project stories <span aria-hidden="true">↗</span></a></p>
 
 ## Experience
 

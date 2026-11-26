@@ -8,6 +8,7 @@
     <meta name="description" content="Mohd Nizamuddin Bin Jaafar — Citizen Analyst and Developer in data analytics, Power BI and Microsoft Power Platform.">
     <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/portfolio-fixes.css?v=' | append: site.github.build_revision | relative_url }}">
     {% if page.project_page %}<link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}">{% endif %}
   </head>
   <body>
@@ -31,6 +32,16 @@
     </header>
 
     <main>
+      {% unless page.project_page %}
+      <section class="home-profile" aria-label="Profile">
+        <img src="{{ '/assets/image/profile-picture2.png' | relative_url }}" alt="Portrait of Mohd Nizamuddin Bin Jaafar" width="600" height="600">
+        <div class="home-profile-copy">
+          <p class="eyebrow">Portfolio · Data &amp; automation</p>
+          <h2>Mohd Nizamuddin<br><em>Bin Jaafar</em></h2>
+          <p>Business planning professional turning data into clear insights and useful tools.</p>
+        </div>
+      </section>
+      {% endunless %}
       {{ content }}
     </main>
 

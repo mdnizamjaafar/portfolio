@@ -1,0 +1,76 @@
+/* Landing-page refinements */
+.home-profile {
+  display: grid;
+  grid-template-columns: minmax(180px, 250px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(28px, 6vw, 72px);
+  padding: clamp(38px, 7vw, 76px) 0;
+  border-bottom: 1px solid var(--line);
+}
+.home-profile img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 7px solid var(--surface);
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center 38%;
+  box-shadow: var(--shadow);
+}
+.home-profile-copy h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 500;
+  letter-spacing: -.06em;
+  line-height: .98;
+}
+.home-profile-copy h2 em { color: var(--accent); font-weight: 400; }
+.home-profile-copy > p:last-child { max-width: 470px; margin: 20px 0 0; color: var(--muted); font-size: 1.08rem; }
+
+/* A real semantic HTML table, presented as a responsive skills grid. */
+.skills-table {
+  display: table !important;
+  width: 100%;
+  margin: 20px 0 38px;
+  border-collapse: separate;
+  border-spacing: 10px;
+  table-layout: fixed;
+}
+.skills-table thead { display: table-header-group; }
+.skills-table tbody { display: table-row-group; }
+.skills-table tr { display: table-row; }
+.skills-table th, .skills-table td {
+  display: table-cell;
+  width: 50%;
+  padding: 13px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  text-align: left;
+  vertical-align: middle;
+}
+.skills-table thead th {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.skills-table tbody th { font-size: .9rem; font-weight: 700; }
+.skills-table tbody td { color: var(--muted); font-size: .82rem; }
+.skill-level { display: inline-block; padding: 4px 9px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); font-size: .7rem; font-weight: 750; }
+.all-projects-link { margin: 20px 0 0; text-align: right; }
+.all-projects-link a { color: var(--text); font-size: .86rem; font-weight: 750; text-decoration-color: var(--accent); text-underline-offset: 5px; }
+.all-projects-link a:hover { color: var(--accent); }
+@media (max-width: 600px) {
+  .home-profile { grid-template-columns: 108px minmax(0, 1fr); gap: 20px; padding: 34px 0; }
+  .home-profile img { border-width: 4px; }
+  .home-profile-copy h2 { font-size: clamp(1.7rem, 8vw, 2.7rem); }
+  .home-profile-copy > p:last-child { margin-top: 10px; font-size: .88rem; }
+  .skills-table { border-spacing: 5px; }
+  .skills-table th, .skills-table td { padding: 10px 8px; }
+  .skills-table tbody th { font-size: .8rem; }
+}
