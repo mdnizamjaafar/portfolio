@@ -1,47 +1,80 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0f172a">
-
-    {% seo %}
+    <meta name="theme-color" content="#f7f8f5">
+    <meta name="description" content="Mohd Nizamuddin Bin Jaafar — Citizen Analyst and Developer in data analytics, Power BI and Microsoft Power Platform.">
+    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
   </head>
   <body>
-    <div class="wrapper">
-      <header class="site-header">
-        <div class="header-intro">
-          <div class="header-copy">
-            <p class="site-kicker">Portfolio</p>
-            <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-            <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
-          </div>
-
-          {% if site.logo %}
-            <img class="profile-image" src="{{ site.logo | relative_url }}" alt="Profile photo of {{ site.title | default: site.github.owner_name }}">
-          {% endif %}
-        </div>
-
-        <nav class="social-links" aria-label="Professional profiles">
-          <a href="https://github.com/mdnizamjaafar">GitHub profile</a>
-          <a href="https://www.linkedin.com/in/mdnizamjaafar/">LinkedIn</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="{{ '/' | absolute_url }}" aria-label="Home">
+          <span class="brand-mark">NJ</span>
+          <span>Mohd Nizamuddin</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </nav>
-      </header>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Change theme">
+          <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.4-.3-.7-.7-.8-.4-.1-.8.1-.9.5A7 7 0 0 1 8 18.4 7 7 0 0 1 11.4 5c.4-.1.6-.5.5-.9A.8.8 0 0 0 12 3Z"/></svg>
+        </button>
+      </div>
+    </header>
 
-      <main class="page-content">
-        {{ content }}
-      </main>
+    <main>
+      {{ content }}
+    </main>
 
-      <footer class="site-footer">
-        <p>Thank you for visiting my portfolio.</p>
-      </footer>
-    </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div>
+          <p class="section-kicker">Let’s work together</p>
+          <h2>Have a useful problem to solve?</h2>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:nizamjaafar@gmail.com">Email me <span>↗</span></a>
+          <a href="https://www.linkedin.com/in/mdnizamjaafar/" rel="noopener">LinkedIn <span>↗</span></a>
+          <a href="https://github.com/mdnizamjaafar" rel="noopener">GitHub <span>↗</span></a>
+        </div>
+      </div>
+      <p class="copyright">© {{ 'now' | date: '%Y' }} Mohd Nizamuddin Bin Jaafar</p>
+    </footer>
+
+    <script>
+      const root = document.documentElement;
+      const toggle = document.querySelector('.theme-toggle');
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      function setTheme(theme) {
+        root.dataset.theme = theme;
+        localStorage.setItem('portfolio-theme', theme);
+        toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+        document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#171916' : '#f7f8f5';
+      }
+
+      setTheme(savedTheme || (systemDark ? 'dark' : 'light'));
+      toggle.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+
+      const navLinks = document.querySelectorAll('.nav a');
+      const sections = [...document.querySelectorAll('main [id]')];
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              navLinks.forEach(link => link.classList.toggle('active', link.hash === '#' + entry.target.id));
+            }
+          });
+        }, { rootMargin: '-30% 0px -60%', threshold: 0 });
+        sections.forEach(section => observer.observe(section));
+      }
+    </script>
   </body>
 </html>
