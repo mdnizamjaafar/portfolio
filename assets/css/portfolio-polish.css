@@ -39,21 +39,20 @@ body {
 .nav a::after { height: 1px; }
 .theme-toggle { border-radius: 6px; }
 
-/* Portrait mirrors the height of the complete profile copy and never grows independently. */
+/* Compact, naturally proportioned portrait aligns with the short profile heading. */
 .home-profile {
   max-width: 900px;
   min-height: 0;
-  grid-template-columns: minmax(0, 1fr) 350px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 140px;
+  align-items: start;
   gap: clamp(28px, 5vw, 64px);
   margin: 0 auto;
   padding: 38px 0 42px;
 }
 .home-profile img {
-  width: 350px;
-  max-height: 438px;
+  width: 140px;
+  height: 175px;
   aspect-ratio: 4 / 5;
-  height: auto;
   object-fit: cover;
   object-position: center 36%;
   border: 1px solid var(--line);
@@ -73,7 +72,6 @@ body {
   line-height: 1.08;
 }
 .home-profile-copy h2 em { color: inherit; font-style: normal; font-weight: 500; }
-.home-profile-copy > p:last-child { max-width: 510px; margin-top: 12px; font-size: 1rem; }
 
 /* Consistent typography and restrained surfaces throughout both pages. */
 h1, h2, h3, h4,
@@ -123,8 +121,6 @@ h1, h2, h3, h4,
 
 @media (max-width: 820px) {
   .header-inner, main, .site-footer { width: min(100% - 36px, 1000px); }
-  .home-profile { grid-template-columns: minmax(0, 1fr) 220px; gap: 24px; }
-  .home-profile img { width: 220px; max-height: 275px; }
 }
 @media (max-width: 600px) {
   .header-inner { width: calc(100% - 28px); }
@@ -133,19 +129,18 @@ h1, h2, h3, h4,
   .home-profile {
     grid-template-columns: minmax(0, 1fr);
     align-items: start;
-    gap: 20px;
+    gap: 16px;
     padding: 28px 0 30px;
   }
   .home-profile-copy { order: 1; }
   .home-profile img {
     order: 2;
-    width: 100%;
-    max-height: none;
-    aspect-ratio: 4 / 5;
+    width: 140px;
+    height: 175px;
+    justify-self: center;
     border-radius: 6px;
   }
   .home-profile-copy h2 { font-size: clamp(1.45rem, 7vw, 2rem); line-height: 1.12; }
-  .home-profile-copy > p:last-child { max-width: none; margin-top: 8px; font-size: .86rem; line-height: 1.5; }
   .home-profile-copy .eyebrow { margin-bottom: 6px; font-size: .62rem; letter-spacing: .08em; }
   .skills-table { border-spacing: 5px; }
   .skills-table th, .skills-table td { padding: 10px 8px; }
