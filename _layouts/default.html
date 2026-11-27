@@ -27,7 +27,7 @@
           <a href="{{ '/' | absolute_url }}#contact">Contact</a>
         </nav>
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Change theme">
-          <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.4-.3-.7-.7-.8-.4-.1-.8.1-.9.5A7 7 0 0 1 8 18.4 7 7 0 0 1 11.4 5c.4-.4.6-.5.5-.9A.8.8 0 0 0 12 3Z"/></svg>
+          <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.4-.3-.7-.7-.8-.4-.1-.8.1-.9.5A7 7 0 0 1 8 18.4 7 7 0 0 1 11.4 5c.4-.1.6-.5.5-.9A.8.8 0 0 0 12 3Z"/></svg>
         </button>
       </div>
     </header>
@@ -35,12 +35,12 @@
     <main>
       {% unless page.project_page %}
       <section class="home-profile" aria-label="Profile">
-        <img src="{{ '/assets/image/profile-picture2.png' | relative_url }}" alt="Portrait of Mohd Nizamuddin Bin Jaafar" width="600" height="600">
         <div class="home-profile-copy">
-          <p class="eyebrow">Portfolio · Data &amp; automation</p>
+          <p class="eyebrow">Citizen Solution <span aria-hidden="true">·</span> Analyst <span aria-hidden="true">|</span> Automation <span aria-hidden="true">|</span> Low-Code App</p>
           <h2>Mohd Nizamuddin<br><em>Bin Jaafar</em></h2>
           <p>I am a citizen developer and analyst who enjoys turning business challenges into practical solutions and data into meaningful insights. I build Power BI dashboards and semantic models in Microsoft Fabric, using tools such as PySpark, Dataflow Gen2, and SharePoint to prepare and integrate data. I also automate workflows with Power Automate and VBA and develop low-code applications with Power Apps.</p>
         </div>
+        <img src="{{ '/assets/image/profile-picture2.png' | relative_url }}" alt="Portrait of Mohd Nizamuddin Bin Jaafar" width="600" height="750">
       </section>
       {% endunless %}
       {{ content }}
