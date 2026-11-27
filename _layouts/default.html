@@ -39,7 +39,7 @@
 
     <main>
       {% unless page.project_page %}
-      <section class="home-profile" aria-label="Profile">
+      <section class="home-profile" id="about" aria-label="Profile">
         <img class="home-profile-photo" src="{{ '/assets/image/profile-picture2.png' | relative_url }}" alt="Portrait of Mohd Nizamuddin Bin Jaafar" width="600" height="750">
         <div class="home-profile-copy">
           <p class="eyebrow">Citizen Solution <span aria-hidden="true">·</span> Analyst <span aria-hidden="true">|</span> Automation <span aria-hidden="true">|</span> Low-Code App</p>
@@ -84,6 +84,10 @@
       setTheme(savedTheme || (systemDark ? 'dark' : 'light'));
       toggle.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'));
 
+      // The featured projects heading is authored in the Markdown homepage; give its wrapper the nav target ID.
+      const workHeading = document.querySelector('.featured-projects-heading');
+      if (workHeading) workHeading.id = 'work';
+
       const navLinks = document.querySelectorAll('.nav a');
       const sections = [...document.querySelectorAll('main [id]')];
       if ('IntersectionObserver' in window) {
@@ -97,6 +101,14 @@
           });
         }, { rootMargin: '-30% 0px -60%', threshold: 0 });
         sections.forEach(section => observer.observe(section));
+      }
+
+      // Ensure direct loads with a hash also scroll after the dynamic work target has been added.
+      if (location.hash) {
+        requestAnimationFrame(() => {
+          const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+          if (target) target.scrollIntoView();
+        });
       }
     </script>
   </body>
