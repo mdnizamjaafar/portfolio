@@ -1,6 +1,6 @@
 # Citizen Analyst & Developer
 
-I am a business planning professional and self-taught analyst interested in turning data into clear insights and useful tools. My portfolio features projects in Excel data analysis and Python.
+I am a citizen developer and analyst who enjoys turning business challenges into practical solutions and data into meaningful insights. I build Power BI dashboards and semantic models in Microsoft Fabric, using tools such as PySpark, Dataflow Gen2, and SharePoint to prepare and integrate data. I also automate workflows with Power Automate and VBA and develop low-code applications with Power Apps.
 
 ## Skills
 
@@ -17,9 +17,10 @@ I am a business planning professional and self-taught analyst interested in turn
   </tbody>
 </table>
 
-## Featured Projects
-
-<p class="all-projects-link"><a href="{{ '/projects/' | relative_url }}">Browse detailed project stories <span aria-hidden="true">↗</span></a></p>
+<div class="section-heading featured-projects-heading">
+  <h2>Featured Projects</h2>
+  <a class="featured-projects-link" href="{{ '/projects/' | relative_url }}">Explore all project stories <span aria-hidden="true">↗</span></a>
+</div>
 
 <div class="project-grid">
   <article class="project-card">
@@ -70,8 +71,6 @@ I am a business planning professional and self-taught analyst interested in turn
     </div>
   </article>
 </div>
-
-<p class="all-projects-link"><a href="{{ '/projects/' | relative_url }}">Explore all project stories <span aria-hidden="true">↗</span></a></p>
 
 ## Experience
 
