@@ -42,5 +42,6 @@
     object-position: center 30%;
   }
   .home-profile { display: block; }
-  .home-profile-photo { display: none; }
+  /* Override the broader .home-profile img rule so only the header avatar shows on mobile. */
+  .home-profile img.home-profile-photo { display: none; }
 }
